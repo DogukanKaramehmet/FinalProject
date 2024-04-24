@@ -11,7 +11,7 @@ Console.ReadLine();
 
 static void ProductTest()
 {
-    ProductManager productManager = new ProductManager(new EfProductal());
+    ProductManager productManager = new ProductManager(new EfProducDal());
 
     var result = productManager.GetProductDetails();
 

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntitiyFramework
 {
-    public class EfProductal : EfEntitityReporisoryBase<Product, NorthwindContext>, IProductDal
+    public class EfProducDal : EfEntitityReporisoryBase<Product, NorthwindContext>, IProductDal
     {
         public List<ProductDetailDto> GetProductDetails()
         {
