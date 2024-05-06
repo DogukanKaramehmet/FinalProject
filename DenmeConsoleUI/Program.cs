@@ -4,36 +4,36 @@ using Business.Concrete;
 using DataAccess.Concrete.EntitiyFramework;
 using DataAccess.Concrete.InMemory;
 
-ProductTest();
+//ProductTest();
 //CategoryTest();
 
 Console.ReadLine();
 
-static void ProductTest()
-{
-    ProductManager productManager = new ProductManager(new EfProducDal());
+//static void ProductTest()
+//{
+//    ProductManager productManager = new ProductManager(new EfProducDal(),new CategoryManager));
 
-    var result = productManager.GetProductDetails();
+//    var result = productManager.GetProductDetails();
 
-    if (result.Success== true)
-    {
-            foreach (var product in result.Data)
-        {
-            Console.WriteLine(product.ProductName+" / "+ product.CategoryName+" / "+product.UnitInStock);
-        }
-    }
-    else
-    {
-        Console.WriteLine(result.Message);
-    }
+//    if (result.Success== true)
+//    {
+//            foreach (var product in result.Data)
+//        {
+//            Console.WriteLine(product.ProductName+" / "+ product.CategoryName+" / "+product.UnitInStock);
+//        }
+//    }
+//    else
+//    {
+//        Console.WriteLine(result.Message);
+//    }
 
-}
+//}
 
-static void CategoryTest()
-{
-    CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
-    foreach (var Category in categoryManager.GetAll())
-    {
-        Console.WriteLine(Category.CategoryName);
-    }
-}
+//static void CategoryTest()
+//{
+//    CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
+//    foreach (var Category in categoryManager.GetAll().Data)
+//    {
+//        Console.WriteLine(Category.CategoryName);
+//    }
+//}

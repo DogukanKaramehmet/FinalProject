@@ -15,7 +15,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(p => p.ProductName).NotEmpty();
             RuleFor(p => p.ProductName).MinimumLength(2);
             RuleFor(p => p.UnitPrice).NotEmpty();
-            RuleFor(p => p.UnitPrice).GreaterThanOrEqualTo(10);
+            RuleFor(p => p.UnitPrice).GreaterThanOrEqualTo(10); 
         }
     }
 }
